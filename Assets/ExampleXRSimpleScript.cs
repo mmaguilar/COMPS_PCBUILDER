@@ -3,19 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class ActivateXRGrabInteractable : XRGrabInteractable
+public class ExampleXRSimpleScript : XRSimpleInteractable
 {
-
-    public GameObject CPUInteractable;
-
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
     {
         base.ProcessInteractable(updatePhase);
     }
 
-    protected override void OnActivated(ActivateEventArgs args)
-    {
-        base.OnActivated(args);
-        
-    }
 }
