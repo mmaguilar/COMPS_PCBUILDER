@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HandDataComponent : MonoBehaviour
 {
-   public enum HandModelType { Left, Right};
+   public enum HandModelType { Left, Right}
 
     public HandModelType type;
     public Transform root;
