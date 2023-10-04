@@ -25,14 +25,12 @@ public class CollisionManager : MonoBehaviour
         {
             print("MOBO" +  Motherboard.gameObject.transform.eulerAngles);
             print("CPU" +  HardwareInteractable.gameObject.transform.eulerAngles);
-            if(HardwareInteractable.gameObject.transform.eulerAngles.x <= 50)
+            if(HardwareInteractable.gameObject.transform.eulerAngles.x <= 50 && (HardwareInteractable.gameObject.transform.eulerAngles.y < 40 || HardwareInteractable.gameObject.transform.eulerAngles.y >= 300))
             {
                 print("GOOD POSITION");
             }
-            else
-            {
-          
-            }
+            
+         
         }
 
     }
