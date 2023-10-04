@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 public class CollisionManager : MonoBehaviour
 {
     /* void OnTriggerEnter(Collider other)
@@ -18,8 +19,14 @@ public class CollisionManager : MonoBehaviour
 
     public GameObject Motherboard;
     public GameObject HardwareInteractable;
+    public GameObject warningPanel;
 
-    void OnTriggerStay(Collider other)
+    private void Start()
+    {
+        warningPanel.SetActive(false);
+    }
+    
+    async void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "CPU Drop Zone")
         {
@@ -28,6 +35,12 @@ public class CollisionManager : MonoBehaviour
             if(HardwareInteractable.gameObject.transform.eulerAngles.x <= 50 && (HardwareInteractable.gameObject.transform.eulerAngles.y < 40 || HardwareInteractable.gameObject.transform.eulerAngles.y >= 300))
             {
                 print("GOOD POSITION");
+                warningPanel.SetActive(false);
+            }
+            else
+            {
+                warningPanel.SetActive(true);
+              
             }
             
          
