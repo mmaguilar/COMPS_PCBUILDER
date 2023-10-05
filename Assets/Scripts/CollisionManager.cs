@@ -26,7 +26,7 @@ public class CollisionManager : MonoBehaviour
         warningPanel.SetActive(false);
     }
     
-    async void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "CPU Drop Zone")
         {
