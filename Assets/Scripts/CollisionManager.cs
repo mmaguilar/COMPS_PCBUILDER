@@ -7,52 +7,36 @@ using UnityEngine.UIElements;
 
 public class CollisionManager : MonoBehaviour
 {
-    /* void OnTriggerEnter(Collider other)
-     {
-         if(other.gameObject.tag == "CPU Drop Zone")
-         {
-             print("Enter");
-         }
-
-     }*/
 
 
-    public GameObject Motherboard;
-    public GameObject HardwareInteractable;
-    public GameObject warningPanel;
+    public MeshRenderer invalidAlignmentText;
+    public MeshRenderer validAlignmentText;
 
-    private void Start()
-    {
-        warningPanel.SetActive(false);
-    }
     
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "CPU Drop Zone")
-        {
-            print("MOBO" +  Motherboard.gameObject.transform.eulerAngles);
-            print("CPU" +  HardwareInteractable.gameObject.transform.eulerAngles);
+       if (other.gameObject.tag == "CPU")
+       {
+            invalidAlignmentText.enabled = true;
+            validAlignmentText.enabled = true;
+           /* //print("MOBO" +  Motherboard.gameObject.transform.eulerAngles);
+            //print("CPU" +  HardwareInteractable.gameObject.transform.eulerAngles);
             if(HardwareInteractable.gameObject.transform.eulerAngles.x <= 50 && (HardwareInteractable.gameObject.transform.eulerAngles.y < 40 || HardwareInteractable.gameObject.transform.eulerAngles.y >= 300))
             {
                 print("GOOD POSITION");
-                warningPanel.SetActive(false);
+                invalidAlignmentText.enabled = false;
+                validAlignmentText.enabled = true;
             }
             else
             {
-                warningPanel.SetActive(true);
+                validAlignmentText.enabled = false;
+                invalidAlignmentText.enabled = true;
               
             }
-            
-         
+            */
         }
 
     }
 
-    /* void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "CPU Drop Zone")
-        {
-            print("Exit");
-        }
-    }*/
+ 
 }
