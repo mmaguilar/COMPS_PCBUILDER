@@ -6,6 +6,8 @@ TagManager:
   tags:
   - 'CPU '
   - CPU Drop Zone
+  - Lower Edge 1
+  - Lower Edge 2
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - SSD
   - Cooler
   - GPU
-  - 
+  - Edge
   - 
   - 
   - 
