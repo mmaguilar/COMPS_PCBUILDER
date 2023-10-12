@@ -10340,6 +10340,7 @@ GameObject:
   - component: {fileID: 1731152092}
   - component: {fileID: 1731152091}
   - component: {fileID: 1731152090}
+  - component: {fileID: 1731152094}
   m_Layer: 9
   m_Name: CPU Drop Zone
   m_TagString: CPU Drop Zone
@@ -10521,6 +10522,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731152088}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1731152094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731152088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dba986972a613348860d2cc90db66d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validAlignmentText: {fileID: 691028105}
+  invalidAlignmentText: {fileID: 1328571039}
 --- !u!1 &1733573480
 GameObject:
   m_ObjectHideFlags: 0
@@ -12920,9 +12935,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 533418887}
   - {fileID: 1722788783}
-  - {fileID: 693823517}
   - {fileID: 1792887853}
   - {fileID: 1034441518}
   - {fileID: 1245696161}
@@ -12931,6 +12944,8 @@ SceneRoots:
   - {fileID: 809735348}
   - {fileID: 730796741}
   - {fileID: 201773745}
+  - {fileID: 693823517}
+  - {fileID: 533418887}
   - {fileID: 543414207}
   - {fileID: 2122337804}
   - {fileID: 2106549751}

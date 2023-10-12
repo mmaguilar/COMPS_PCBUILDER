@@ -14,6 +14,15 @@ public class DetectAlignment : MonoBehaviour
         invalidAlignmentText.SetActive(false);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Lower Edge 1")
+        {
+            validAlignmentText.SetActive(true);
+            invalidAlignmentText.SetActive(false);
+        }
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Lower Edge 1")
