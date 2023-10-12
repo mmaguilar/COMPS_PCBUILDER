@@ -21,7 +21,7 @@ public class DetectAlignment : MonoBehaviour
            validAlignmentText.SetActive(true);
            invalidAlignmentText.SetActive(false);
         }
-     
+           
     }
 
     private void OnTriggerExit(Collider other)
