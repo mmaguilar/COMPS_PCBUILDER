@@ -10683,6 +10683,7 @@ MonoBehaviour:
   validAlignmentText: {fileID: 691028105}
   invalidAlignmentText: {fileID: 1328571039}
   socket: {fileID: 1731152090}
+  waitTime: 10
 --- !u!1 &1733573480
 GameObject:
   m_ObjectHideFlags: 0
