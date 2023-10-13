@@ -9,14 +9,12 @@ public class DropZoneDetection : MonoBehaviour
     public GameObject invalidAlignmentText;
     public XRSocketInteractor socket;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        invalidAlignmentText.SetActive(false);
-    }
     // Start is called before the first frame update
     private void OnTriggerExit(Collider other)
     {
        invalidAlignmentText.SetActive(false);
-       validAlignmentText.SetActive(false);         
+       validAlignmentText.SetActive(false);
+
+        print(socket.GetOldestInteractableSelected());
     }
 }
