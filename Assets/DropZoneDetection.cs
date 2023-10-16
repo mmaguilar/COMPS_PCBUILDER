@@ -7,10 +7,12 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class DropZoneDetection : MonoBehaviour
 {
+    public FadeScreen fadeScreen;
     public GameObject validAlignmentText;
     public GameObject invalidAlignmentText;
     public XRSocketInteractor socket;
     public float waitTime;
+     
 
     // Start is called before the first frame update
     private void OnTriggerExit(Collider other)
@@ -22,14 +24,23 @@ public class DropZoneDetection : MonoBehaviour
         if(socket.GetOldestInteractableSelected() != null)
         {
             validAlignmentText.SetActive(false);
-            StartCoroutine(LoadCPUScene());
-            SceneManager.LoadScene(2);
+            GoToScene(2);
             
         }
     }
 
-    IEnumerator LoadCPUScene()
+    public void GoToScene(int scene)
     {
-        yield return new WaitForSeconds(waitTime);
+        StartCoroutine(GoToSceneRoutine(scene));
     }
+
+    IEnumerator GoToSceneRoutine(int scene)
+    {
+        fadeScreen.FadeOut();
+        yield return new WaitForSeconds(fadeScreen.fadeDuration);
+
+        //Launch the new Scene 
+        SceneManager.LoadScene(scene);
+    }
+
 }
