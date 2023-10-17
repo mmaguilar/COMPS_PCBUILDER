@@ -12,7 +12,7 @@ public class LatchCollision : MonoBehaviour
         if(other.gameObject.tag == "Collider")
         {
 
-            GoToScene(0);
+            GoToScene(3);
         }
         
     }
