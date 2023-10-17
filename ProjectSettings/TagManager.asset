@@ -9,6 +9,7 @@ TagManager:
   - Lower Edge 1
   - Lower Edge 2
   - Collider
+  - LeverCollider
   layers:
   - Default
   - TransparentFX
