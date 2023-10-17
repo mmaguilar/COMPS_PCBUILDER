@@ -8,6 +8,7 @@ TagManager:
   - CPU Drop Zone
   - Lower Edge 1
   - Lower Edge 2
+  - Collider
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - Cooler
   - GPU
   - Edge
-  - 
+  - Collider
   - 
   - 
   - 
