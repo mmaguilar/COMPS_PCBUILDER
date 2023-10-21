@@ -12,6 +12,7 @@ public class DropZoneDetection : MonoBehaviour
     public GameObject invalidAlignmentText;
     public XRSocketInteractor socket;
     public float waitTime;
+    public int SceneToTransition;
      
 
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class DropZoneDetection : MonoBehaviour
         if(socket.GetOldestInteractableSelected() != null)
         {
             validAlignmentText.SetActive(false);
-            GoToScene(2);
+            GoToScene(SceneToTransition);
             
         }
     }
