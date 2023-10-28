@@ -10,6 +10,8 @@ TagManager:
   - Lower Edge 2
   - Collider
   - LeverCollider
+  - Finished Collider
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
