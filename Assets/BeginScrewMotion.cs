@@ -10,6 +10,9 @@ public class BeginScrewMotion : MonoBehaviour
     public float rotateSpeed;
     public float moveSpeed;
 
+    public GameObject startingInstructions;
+    public GameObject startingPointer;
+
     public GameObject currentStopText;
     public GameObject currentInstructionsText;
     public GameObject currentPointer;
@@ -34,6 +37,8 @@ public class BeginScrewMotion : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
+        startingInstructions.gameObject.SetActive(false);
+        startingPointer.gameObject.SetActive(false);
         if (other.gameObject.tag == "Collider")
         {
             StartCoroutine(screwdriverMotion());
