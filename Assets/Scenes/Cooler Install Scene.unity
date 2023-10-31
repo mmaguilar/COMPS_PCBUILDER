@@ -14314,6 +14314,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1506539542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1506539545 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 888800518696338763, guid: 0a054c40cd9f2ea4f816dedf030cca77,
+    type: 3}
+  m_PrefabInstance: {fileID: 1506539542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e762e1ec0f31d964a9d4af07bf9b7bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1516807909
 GameObject:
   m_ObjectHideFlags: 0
@@ -15305,7 +15317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Step 2: Installing the Cooler'
+  m_text: Installing the Cooler
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19221,6 +19233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e750d38b46f90de4ebe335eb06aa4dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeScreen: {fileID: 1506539545}
+  SceneToTransition: 4
   screwdriverObject: {fileID: 1176351571}
   boltObject: {fileID: 741115936}
   rotateSpeed: 4

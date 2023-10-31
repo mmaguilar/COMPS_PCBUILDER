@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CompleteScrewMotion : MonoBehaviour
 {
+    public FadeScreen fadeScreen;
+    public int SceneToTransition;
+
     public GameObject screwdriverObject;
     public GameObject boltObject;
 
@@ -29,6 +33,7 @@ public class CompleteScrewMotion : MonoBehaviour
         {
             currentStopText.gameObject.SetActive(true);
             completedText.gameObject.SetActive(true);
+            GoToScene(SceneToTransition);
         }
 
     }
@@ -51,5 +56,17 @@ public class CompleteScrewMotion : MonoBehaviour
         boltObject.transform.Translate(0, moveSpeed, 0);
         yield return new WaitForSeconds(0.01f);
     }
+    public void GoToScene(int scene)
+    {
+        StartCoroutine(GoToSceneRoutine(scene));
+    }
 
+    IEnumerator GoToSceneRoutine(int scene)
+    {
+        fadeScreen.FadeOut();
+        yield return new WaitForSeconds(fadeScreen.fadeDuration);
+
+        //Launch the new Scene 
+        SceneManager.LoadScene(scene);
+    }
 }
