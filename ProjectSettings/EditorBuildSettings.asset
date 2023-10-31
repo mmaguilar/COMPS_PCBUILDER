@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Scene.unity
     guid: 297f3d749a6dc3541bab98b95c269766
   - enabled: 1
+    path: Assets/Scenes/CPU Instructions Scene.unity
+    guid: f40b70bfe0caf9b439a0273ec3630803
+  - enabled: 1
     path: Assets/Scenes/CPU Install Scene.unity
     guid: 679a0193d525f2c4cadd70b649e29cde
   - enabled: 1

@@ -22,15 +22,14 @@ public class ScrewMotion : MonoBehaviour
     public GameObject currentInstructionsText;
     public GameObject currentPointer;
 
-    public GameObject nextStopText;
-    public GameObject nextInstructionsText;
-    public GameObject nextPointer;
+   // public GameObject completedText;
 
     private void Start()
     {
         currentStopText.gameObject.SetActive(false);
         currentInstructionsText.gameObject.SetActive(false);
         currentPointer.gameObject.SetActive(false);
+        //completedText.gameObject.SetActive(false);
     }
 
     public void OnTriggerEnter(Collider other)
@@ -46,12 +45,9 @@ public class ScrewMotion : MonoBehaviour
 
     public void OnTriggerStay(Collider other)
     {
-        if(previousStopText.gameObject != null && previousInstructionsText.gameObject != null && previousPointer != null)
-        {
-            previousStopText.gameObject.SetActive(false);
-            previousInstructionsText.gameObject.SetActive(false);
-            previousPointer.gameObject.SetActive(false);
-        }
+        previousStopText.gameObject.SetActive(false);
+        previousInstructionsText.gameObject.SetActive(false);
+        previousPointer.gameObject.SetActive(false);
 
         if (other.gameObject.tag == "Collider")
         {

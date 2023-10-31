@@ -14,6 +14,8 @@ public class LeverCollision : MonoBehaviour
 
     public FadeScreen fadeScreen;
 
+    public int nextScene;
+
     public void Start()
     {
         text3.gameObject.SetActive(false);
@@ -30,7 +32,7 @@ public class LeverCollision : MonoBehaviour
             lever.gameObject.SetActive(false);
             fixedLever.gameObject.SetActive(true);
 
-            GoToScene(3);
+            GoToScene(nextScene);
         }
     }
 
