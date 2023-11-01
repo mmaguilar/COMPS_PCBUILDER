@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Installed CPU Scene.unity
     guid: dce9dba208792a240bb210b245dfebfe
   - enabled: 1
+    path: Assets/Scenes/Cooler Instructions Scene.unity
+    guid: 506885a408100fd4bb59cf67b7465335
+  - enabled: 1
     path: Assets/Scenes/Cooler Install Scene.unity
     guid: 78516e3b312517142923ed8cbe6813a6
   m_configObjects:
