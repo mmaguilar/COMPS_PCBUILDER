@@ -12,6 +12,8 @@ TagManager:
   - LeverCollider
   - Finished Collider
   - Checkpoint
+  - Checkpoint1
+  - Checkpoint2
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - GPU
   - Edge
   - Collider
-  - 
+  - Motherboard
   - 
   - 
   - 
