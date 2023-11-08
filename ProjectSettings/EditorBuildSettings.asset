@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Motherboard Install  Scene.unity
     guid: 5e08e0084b056cd43915875b43bdf9bc
+  - enabled: 1
+    path: Assets/Scenes/Installed Motherboard Scene.unity
+    guid: 3a9328865ae293349bd4a1400461bb47
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e90fb3145eba9e248b2dac47fae8e0de,
       type: 2}
