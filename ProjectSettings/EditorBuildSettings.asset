@@ -50,6 +50,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Installed GPU Scene.unity
     guid: 7bc8ee31be4c5e442bfa1d665bac0964
+  - enabled: 1
+    path: Assets/Scenes/Power Supply Install Scene.unity
+    guid: 8ce652bd007028e4bb54fa9769e42a7f
+  - enabled: 1
+    path: Assets/Scenes/Installed Power Supply Scene.unity
+    guid: 67532d02f87ca4747852fa1d8f6b770c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e90fb3145eba9e248b2dac47fae8e0de,
       type: 2}
