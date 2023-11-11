@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GPU Install Scene.unity
     guid: 04267d93c4cc63c4ea7ec2f488e6b05c
   - enabled: 1
+    path: Assets/Scenes/GPU Install Scene 2.unity
+    guid: ff96b85183fed4d48a3e28e90dfccc55
+  - enabled: 1
     path: Assets/Scenes/Installed GPU Scene.unity
     guid: 7bc8ee31be4c5e442bfa1d665bac0964
   - enabled: 1
