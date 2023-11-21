@@ -18999,7 +18999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 1794218850}
-  SceneToTransition: 4
+  SceneToTransition: 11
 --- !u!114 &1999818570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20546,7 +20546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeScreen: {fileID: 1794218850}
-  SceneToTransition: 7
+  SceneToTransition: 11
   screwdriverObject: {fileID: 1176351571}
   boltObject: {fileID: 741115936}
   rotateSpeed: 4

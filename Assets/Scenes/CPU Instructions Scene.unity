@@ -2137,7 +2137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7385972e08269d444b6b98c4575c96d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 3
+  nextScene: 6
   fadeScreen: {fileID: 2079228694}
   sceneTime: 14
 --- !u!1 &351455610

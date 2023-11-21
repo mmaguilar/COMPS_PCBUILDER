@@ -3380,7 +3380,7 @@ MonoBehaviour:
   completedText6: {fileID: 2079404506}
   completedInstallText: {fileID: 563019235}
   fadeScreen: {fileID: 219741261}
-  SceneToTransition: 12
+  SceneToTransition: 22
 --- !u!4 &512872369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2261b3aa80cb41e47807a6f74ea59fe2,

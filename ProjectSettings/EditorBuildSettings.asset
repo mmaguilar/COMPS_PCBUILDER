@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Introduction Scene.unity
+    guid: a09a760a21ed53c4cbb6d60f0202b83c
+  - enabled: 1
+    path: Assets/Scenes/Overview Scene.unity
+    guid: 6898a02999ba755478106d05b8a96053
+  - enabled: 1
     path: Assets/Scenes/Main Scene.unity
     guid: 297f3d749a6dc3541bab98b95c269766
+  - enabled: 1
+    path: Assets/Scenes/CPU Informational.unity
+    guid: b4b961e344956fa49957709ca87f1c44
   - enabled: 1
     path: Assets/Scenes/CPU Instructions Scene.unity
     guid: f40b70bfe0caf9b439a0273ec3630803
@@ -21,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Installed CPU Scene.unity
     guid: dce9dba208792a240bb210b245dfebfe
   - enabled: 1
+    path: Assets/Scenes/Cooler Informational.unity
+    guid: c5ea595252da66b4c8c689a9e597e04b
+  - enabled: 1
     path: Assets/Scenes/Cooler Instructions Scene.unity
     guid: 506885a408100fd4bb59cf67b7465335
   - enabled: 1
@@ -30,20 +42,41 @@ EditorBuildSettings:
     path: Assets/Scenes/Installed Cooler Scene.unity
     guid: 5e13886210684644eb6f467afdf337ac
   - enabled: 1
+    path: Assets/Scenes/RAM Informational.unity
+    guid: 7a586a96f34d06b4bbe1741ee789c3ad
+  - enabled: 1
+    path: Assets/Scenes/RAM Instructions Scene.unity
+    guid: 914797d7f49f8ac49a35a07bf4c66a7b
+  - enabled: 1
     path: Assets/Scenes/RAM Install Scene.unity
     guid: a6073cf72401231469f8db369ab1e8f6
   - enabled: 1
     path: Assets/Scenes/Installed RAM Scene.unity
     guid: 9cd3bc65ed8d0fa4da323a9a4cd3e627
   - enabled: 1
+    path: Assets/Scenes/SSD Informational.unity
+    guid: ee21a7484ce0bae459e00e2bb2bddc47
+  - enabled: 1
+    path: Assets/Scenes/SSD Instructions Scene.unity
+    guid: 5bc39682d993820408e8712b475f4747
+  - enabled: 1
     path: Assets/Scenes/SSD Install Scene.unity
     guid: c9fa814e506e91049b4aeabe7815a15d
+  - enabled: 1
+    path: Assets/Scenes/Motherboard Informational.unity
+    guid: 2b658b8a17d258f4b8f9034cbd89896a
+  - enabled: 1
+    path: Assets/Scenes/Motherboard Instructions Scene.unity
+    guid: 64015d87bba80d64d9c463a6fcc44e21
   - enabled: 1
     path: Assets/Scenes/Motherboard Install  Scene.unity
     guid: 5e08e0084b056cd43915875b43bdf9bc
   - enabled: 1
     path: Assets/Scenes/Installed Motherboard Scene.unity
     guid: 3a9328865ae293349bd4a1400461bb47
+  - enabled: 1
+    path: Assets/Scenes/GPU Informational.unity
+    guid: c637e92c441cd3247944e1ccd5b4a0be
   - enabled: 1
     path: Assets/Scenes/GPU Install Scene.unity
     guid: 04267d93c4cc63c4ea7ec2f488e6b05c

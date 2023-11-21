@@ -9730,7 +9730,7 @@ MonoBehaviour:
   invalidAlignmentText: {fileID: 1071593762}
   socket: {fileID: 1508949153}
   waitTime: 10
-  SceneToTransition: 5
+  SceneToTransition: 8
 --- !u!1 &1525326105
 GameObject:
   m_ObjectHideFlags: 0

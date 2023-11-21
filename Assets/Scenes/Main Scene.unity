@@ -13558,7 +13558,7 @@ MonoBehaviour:
   invalidAlignmentText: {fileID: 1328571039}
   socket: {fileID: 1731152090}
   waitTime: 5
-  SceneToTransition: 2
+  SceneToTransition: 4
 --- !u!1 &1733573480
 GameObject:
   m_ObjectHideFlags: 0
