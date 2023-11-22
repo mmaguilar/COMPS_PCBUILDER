@@ -13446,6 +13446,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 492628611}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &492628613 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4257412417454173071, guid: d5615d616019430d9c2e8727e71c97fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 492628611}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494017165
 GameObject:
   m_ObjectHideFlags: 0
@@ -32883,9 +32889,9 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1387228509}
+      - m_Target: {fileID: 492628613}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+        m_MethodName: 
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38768,7 +38774,7 @@ MonoBehaviour:
   socket9: {fileID: 199130182}
   socket10: {fileID: 1864312880}
   waitTime: 2
-  SceneToTransition: 17
+  SceneToTransition: 33
 --- !u!1 &1644640013
 GameObject:
   m_ObjectHideFlags: 0

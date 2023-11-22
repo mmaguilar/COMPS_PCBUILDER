@@ -1647,7 +1647,7 @@ MonoBehaviour:
   fadeScreen: {fileID: 1089611418}
   socket: {fileID: 344433743}
   waitTime: 2
-  SceneToTransition: 14
+  SceneToTransition: 26
 --- !u!1001 &183802064
 PrefabInstance:
   m_ObjectHideFlags: 0

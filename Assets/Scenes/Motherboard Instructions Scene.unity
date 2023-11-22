@@ -9197,9 +9197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7385972e08269d444b6b98c4575c96d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 6
+  nextScene: 21
   fadeScreen: {fileID: 678655528}
-  sceneTime: 21
+  sceneTime: 16
 --- !u!328 &1143112358
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -9208,7 +9208,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143112356}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d9b260f2eef88d6489a08e1c7dc57171, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: d212386c1bd42b146902debe3e62a606, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

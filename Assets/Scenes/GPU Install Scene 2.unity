@@ -7966,7 +7966,7 @@ MonoBehaviour:
   completedText2: {fileID: 1993714502}
   completedInstallText: {fileID: 1604824971}
   fadeScreen: {fileID: 1455678174}
-  SceneToTransition: 15
+  SceneToTransition: 28
 --- !u!1 &1052332056
 GameObject:
   m_ObjectHideFlags: 0
@@ -9936,9 +9936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '...
-
-'
+  m_text: 'Align the tip of the screwdriver over the screws. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11069,7 +11067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "STEP 7: Install the Power Supply\n\n "
+  m_text: "Install the GPU\n\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
