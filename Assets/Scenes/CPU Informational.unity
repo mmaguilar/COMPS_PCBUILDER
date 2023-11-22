@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7385972e08269d444b6b98c4575c96d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 5
+  nextScene: 4
   fadeScreen: {fileID: 2144048078}
   sceneTime: 14
 --- !u!65 &65932342
@@ -12613,7 +12613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7385972e08269d444b6b98c4575c96d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 5
+  nextScene: 4
   fadeScreen: {fileID: 2144048078}
   sceneTime: 14
 --- !u!65 &1443334168

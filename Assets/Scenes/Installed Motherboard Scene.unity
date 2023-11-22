@@ -656,7 +656,7 @@ MonoBehaviour:
   fadeScreen: {fileID: 336104602}
   socket: {fileID: 106302440}
   waitTime: 2
-  SceneToTransition: 23
+  SceneToTransition: 24
 --- !u!1 &109899912
 GameObject:
   m_ObjectHideFlags: 0

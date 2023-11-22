@@ -10768,7 +10768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 17
   fadeScreen: {fileID: 275264286}
-  sceneTime: 15
+  sceneTime: 16
 --- !u!65 &1185946565
 BoxCollider:
   m_ObjectHideFlags: 0
