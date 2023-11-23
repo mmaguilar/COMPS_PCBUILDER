@@ -9426,7 +9426,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'This is the brain of the CPU. It executes instuctions and assigns tasks
+  m_text: 'This is the brain of the PC. It executes instuctions and assigns tasks
     to other components.
 
 '
