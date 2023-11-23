@@ -9,11 +9,25 @@ public class GPUAlignment : MonoBehaviour
     public GameObject validAlignmentText;
     public GameObject InvalidAlignmentText;
 
+    public FadeScreen fadeScreen;
+    public XRSocketInteractor socket;
+    public float waitTime;
+    public int SceneToTransition;
+
     public void Start()
     {
         validAlignmentText.SetActive(false);
         InvalidAlignmentText.SetActive(false);
     }
+
+    public void Update()
+    {
+        if (socket.GetOldestInteractableSelected() != null)
+        {
+            GoToScene(SceneToTransition);
+        }
+    }
+
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Collider")
@@ -31,6 +45,19 @@ public class GPUAlignment : MonoBehaviour
     {
         InvalidAlignmentText.SetActive(true);
         validAlignmentText.SetActive(false);
+    }
+    public void GoToScene(int scene)
+    {
+        StartCoroutine(GoToSceneRoutine(scene));
+    }
+
+    IEnumerator GoToSceneRoutine(int scene)
+    {
+        fadeScreen.FadeOut();
+        yield return new WaitForSeconds(fadeScreen.fadeDuration);
+
+        //Launch the new Scene 
+        SceneManager.LoadScene(scene);
     }
 
 }
