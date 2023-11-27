@@ -24,6 +24,7 @@ public class BeginScrewMotion : MonoBehaviour
         currentPointer.gameObject.SetActive(false);
     }
 
+    //updates UI objects on collision
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")

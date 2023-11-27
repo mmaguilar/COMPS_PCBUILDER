@@ -6895,7 +6895,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Building a PC is an extensive process. \n\nThis platform is meant to introduce
-    computer assembly using simulation.\n\n"
+    computer assembly using virtual technology.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6958,7 +6958,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 8.175812, y: -4.7175527, z: -2.1663117, w: 6.7811193}
+  m_margin: {x: 8.175812, y: -4.7175527, z: -4.560511, w: 6.7811193}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

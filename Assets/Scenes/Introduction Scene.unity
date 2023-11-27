@@ -9208,7 +9208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 1
   fadeScreen: {fileID: 808543102}
-  sceneTime: 4
+  sceneTime: 6
 --- !u!114 &1157906268
 MonoBehaviour:
   m_ObjectHideFlags: 0
