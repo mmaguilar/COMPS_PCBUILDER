@@ -11,9 +11,7 @@ public class SSDScrewdriverMotion : MonoBehaviour
     public float rotateSpeed;
     public float moveSpeed;
 
-    public GameObject StartText;
-    public GameObject NextScrewText;
-    public GameObject StopText;
+    public GameObject ScrewText;
     public GameObject CompletedText;
 
     public FadeScreen fadeScreen;
@@ -22,8 +20,6 @@ public class SSDScrewdriverMotion : MonoBehaviour
 
     public void Start()
     {
-        NextScrewText.gameObject.SetActive(false);
-        StopText.gameObject.SetActive(false);
         CompletedText.gameObject.SetActive(false);  
     }
 
@@ -31,12 +27,6 @@ public class SSDScrewdriverMotion : MonoBehaviour
     {
         if(other.gameObject.tag == "Checkpoint1")
         {
-            StopText.gameObject.SetActive(true);
-            NextScrewText.gameObject.gameObject.SetActive(true);
-        }else if(other.gameObject.tag == "Checkpoint2")
-        {
-            StopText.gameObject.SetActive(false);
-            NextScrewText.gameObject.SetActive(false);
             CompletedText.gameObject.SetActive(true);
             GoToScene(SceneToTransition);
         }
@@ -45,7 +35,7 @@ public class SSDScrewdriverMotion : MonoBehaviour
     {
         if (other.gameObject.tag == "Collider")
         {
-            StartText.gameObject.SetActive(false);
+            ScrewText.gameObject.SetActive(false);
             StartCoroutine(screwdriverMotion());
         }
     }

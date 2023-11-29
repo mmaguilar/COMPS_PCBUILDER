@@ -9441,7 +9441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Align the tip of the screwdriver over the screws. \n"
+  m_text: "Align the tip of the screwdriver over the screw. \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14798,7 +14798,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964120949}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d03409bd511313648a9fc758298ca422, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 67b45b03e0b1a284bb5e7eba09aa29d8, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
