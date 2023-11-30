@@ -7,7 +7,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class VerifyMonitorInstall1 : MonoBehaviour
 {
     public XRSocketInteractor hdmi;
-    public XRSocketInteractor usb;
     public XRSocketInteractor power;
 
     public FadeScreen fadeScreen;
@@ -22,7 +21,7 @@ public class VerifyMonitorInstall1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(hdmi.GetOldestInteractableSelected() != null && usb.GetOldestInteractableSelected() != null && power.GetOldestInteractableSelected() != null)
+       if(hdmi.GetOldestInteractableSelected() != null && power.GetOldestInteractableSelected() != null)
         {
             completedInstallText.SetActive(true);
             GoToScene(SceneToTransition);

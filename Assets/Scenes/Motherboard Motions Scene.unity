@@ -6677,7 +6677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Align the tip of the screwdriver with the top of the screw.
+  m_text: 'Align the tip of the screwdriver with the top of the screws.
 
 '
   m_isRightToLeft: 0

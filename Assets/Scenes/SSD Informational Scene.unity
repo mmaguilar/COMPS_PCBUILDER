@@ -14088,8 +14088,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- Align the SSD stick to the screw holes on the motherboard. \n- Secure
-    it with screws may require a small amount of force. "
+  m_text: "- Align the SSD stick with its screw hole on the motherboard. \n-SSDs
+    are connected in different ways depending on your type of SSD and motherboard."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

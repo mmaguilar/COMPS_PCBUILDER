@@ -2922,7 +2922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Align the tip of the screwdriver with the top of the screw.
+  m_text: 'Align the tip of the screwdriver with the top of the screws.
 
 '
   m_isRightToLeft: 0
@@ -6597,7 +6597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7385972e08269d444b6b98c4575c96d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 27
+  nextScene: 39
   fadeScreen: {fileID: 450825262}
   sceneTime: 10
 --- !u!328 &1224157885

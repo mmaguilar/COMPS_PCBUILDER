@@ -9,6 +9,7 @@ public class VerifyMonitorInstall2 : MonoBehaviour
     public XRSocketInteractor hdmi;
     public XRSocketInteractor ethernet;
     public XRSocketInteractor power;
+    public XRSocketInteractor usb;
 
     public FadeScreen fadeScreen;
     public int SceneToTransition;
@@ -22,7 +23,7 @@ public class VerifyMonitorInstall2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hdmi.GetOldestInteractableSelected() != null && ethernet.GetOldestInteractableSelected() != null && power.GetOldestInteractableSelected() != null)
+        if (usb.GetOldestInteractableSelected() != null && hdmi.GetOldestInteractableSelected() != null && ethernet.GetOldestInteractableSelected() != null && power.GetOldestInteractableSelected() != null)
         {
             completedInstallText.SetActive(true);
             GoToScene(SceneToTransition);

@@ -3597,7 +3597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Connect the corresponding cables to the monitor.
+  m_text: 'Connect the power and display cables to the monitor.
 
 '
   m_isRightToLeft: 0
@@ -6467,7 +6467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7385972e08269d444b6b98c4575c96d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 38
+  nextScene: 37
   fadeScreen: {fileID: 840579453}
   sceneTime: 10
 --- !u!328 &911289170
@@ -6478,7 +6478,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911289168}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 01522aa54b50ccd4484d97356b1373aa, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 2205d2f6523645a4eb276158f0274acc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
