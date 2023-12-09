@@ -16,6 +16,7 @@ public class LatchCollision : MonoBehaviour
 
     public GameObject lever;
 
+    //set objects disabled or enabled when scene starts
     public void Start()
     {
         text1.gameObject.SetActive(true);
@@ -27,6 +28,7 @@ public class LatchCollision : MonoBehaviour
         top.gameObject.SetActive(true);
 
     }
+    //update text objects active/disactive on collision stay
     public void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Collider")

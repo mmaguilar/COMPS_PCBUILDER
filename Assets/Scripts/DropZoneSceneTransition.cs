@@ -8,12 +8,14 @@ public class DropZoneSceneTransition : MonoBehaviour
 {
     public FadeScreen fadeScreen;
     public XRSocketInteractor socket;
+
     public float waitTime;
     public int SceneToTransition;
 
+    //verify object in drop zone
+    //transition to new scene
     private void OnTriggerExit(Collider other)
     {
-        print(socket.GetOldestInteractableSelected());
         if (socket.GetOldestInteractableSelected() != null)
         {
             GoToScene(SceneToTransition);
@@ -21,11 +23,14 @@ public class DropZoneSceneTransition : MonoBehaviour
         }
     }
 
+    //transition to new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+
+    //fade into new scene
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

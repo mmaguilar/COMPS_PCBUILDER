@@ -17,12 +17,12 @@ public class SSDScrewdriverMotion : MonoBehaviour
     public FadeScreen fadeScreen;
     public int SceneToTransition;
 
-
     public void Start()
     {
         CompletedText.gameObject.SetActive(false);  
     }
 
+    //verify and transition to a new scene on collision enter
     public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Checkpoint1")
@@ -31,6 +31,8 @@ public class SSDScrewdriverMotion : MonoBehaviour
             GoToScene(SceneToTransition);
         }
     }
+
+    //verify and transition to a new scene on collision stay 
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Collider")
@@ -40,6 +42,7 @@ public class SSDScrewdriverMotion : MonoBehaviour
         }
     }
 
+    //screwdriver behavior and animation 
     IEnumerator screwdriverMotion()
     {
         screwdriverObject.transform.Rotate(0, rotateSpeed, 0);
@@ -47,11 +50,13 @@ public class SSDScrewdriverMotion : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
     }
 
+    //transition to a new scene 
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into a new scene 
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

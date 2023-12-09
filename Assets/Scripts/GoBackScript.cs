@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//script for the option to go back to the previous scene 
+
 public class GoBackScript : MonoBehaviour
 {
     public FadeScreen fadeScreen;
@@ -13,11 +15,13 @@ public class GoBackScript : MonoBehaviour
         GoToScene(SceneToTransition);
     }
 
+    //transition to new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into new scene
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

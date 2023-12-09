@@ -7,11 +7,14 @@ public class RAMAlignment : MonoBehaviour
     public GameObject validAlignmentText;
     public GameObject InvalidAlignmentText;
 
+    //disable text objects when scene begins
     public  void Start()
     {
         validAlignmentText.SetActive(false);
         InvalidAlignmentText.SetActive(false);
     }
+
+    //update objects on colision stay
     public void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Collider")
@@ -21,10 +24,10 @@ public class RAMAlignment : MonoBehaviour
             {
                 InvalidAlignmentText.SetActive(false);
             }
-            print("Aligned");
         }
     }
 
+    //update text objects on collision exit 
     public void OnTriggerExit(Collider other)
     {
         InvalidAlignmentText.SetActive(true);

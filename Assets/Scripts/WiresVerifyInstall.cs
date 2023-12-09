@@ -20,7 +20,6 @@ public class WiresVerifyInstall : MonoBehaviour
     public XRSocketInteractor socket9;
     public XRSocketInteractor socket10;
 
-
     public float waitTime;
     public int SceneToTransition;
 
@@ -28,6 +27,9 @@ public class WiresVerifyInstall : MonoBehaviour
     {
         completedInstallText.SetActive(false);
     }
+
+    // verify that all objects are in drop zones
+    // transition to a new scene 
     public void Update()
     {
         if (socket1.GetOldestInteractableSelected() != null && socket2.GetOldestInteractableSelected() != null && socket3.GetOldestInteractableSelected() != null
@@ -40,11 +42,14 @@ public class WiresVerifyInstall : MonoBehaviour
 
         }
     }
+
+    //transition to a new scene 
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into new scene
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

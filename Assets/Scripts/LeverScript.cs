@@ -6,7 +6,7 @@ public class LeverScript : MonoBehaviour
 {
     public GameObject fixedLever;
 
-    // Start is called before the first frame update
+    //Disable object when the scene begins 
     void Start()
     {
         fixedLever.gameObject.SetActive(false);

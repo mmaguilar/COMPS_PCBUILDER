@@ -9,7 +9,8 @@ public class FadeScreen : MonoBehaviour
     public Color fadeColor;
     private Renderer rend;
 
-    // Start is called before the first frame update
+    //get renderer when scene begins
+    //fade into the scene
     void Start()
     {
         rend = GetComponent<Renderer>();
@@ -29,11 +30,13 @@ public class FadeScreen : MonoBehaviour
         Fade(0, 1);
     }
 
+    //begin fade behavior 
     public void Fade(float alphaIn, float alphaOut)
     {
         StartCoroutine(FadeRoutine(alphaIn, alphaOut));
     }
     
+    //fade screen behavior coroutine
     public IEnumerator FadeRoutine(float alphaIn, float alphaOut)
     {
         float timer = 0; 

@@ -9,7 +9,7 @@ public class AnimateHandOnInput : MonoBehaviour
     public InputActionProperty gripAnimationAction;
     public Animator handAnimator;
 
-    //updates the controller actions
+    //updates the hand animation during controller actions
     void Update()
     {
        float triggerValue = pinchAnimationAction.action.ReadValue<float>();

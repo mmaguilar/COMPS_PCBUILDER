@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
+//XR Interaction Toolkit built-in script 
 
 public class DoubleXRGrabInteractable : XRGrabInteractable
 {

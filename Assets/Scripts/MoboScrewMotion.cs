@@ -18,6 +18,7 @@ public class MoboScrewMotion : MonoBehaviour
         completeText.SetActive(false);
     }
 
+    //verify collision and update text object
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")
@@ -26,6 +27,7 @@ public class MoboScrewMotion : MonoBehaviour
         }
     }
 
+    //verify collision and begin screwing motion
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Collider")
@@ -35,6 +37,7 @@ public class MoboScrewMotion : MonoBehaviour
         }
     }
 
+    //screwdriver behavior and animation
     IEnumerator screwdriverMotion()
     {
         screwdriverObject.transform.Rotate(0, rotateSpeed, 0);

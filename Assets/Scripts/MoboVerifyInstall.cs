@@ -17,17 +17,17 @@ public class MoboVerifyInstall : MonoBehaviour
     public FadeScreen fadeScreen;
     public int SceneToTransition;
 
-
     private void Start()
     {
         completedInstallText.SetActive(false);
     }
     private void Update()
     {
+        //update text objects when install is complete 
+        //transition to new scene 
         if(completedText1.activeSelf && completedText2.activeSelf && completedText3.activeSelf
             && completedText4.activeSelf && completedText5.activeSelf && completedText6.activeSelf)
         {
-            print("Install complete");
             completedText1.SetActive(false);
             completedText2.SetActive(false);
             completedText3.SetActive(false);
@@ -39,11 +39,13 @@ public class MoboVerifyInstall : MonoBehaviour
         } 
     }
 
+    //transition to a new scene 
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into a new scene 
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

@@ -18,7 +18,9 @@ public class VerifyMonitorInstall1 : MonoBehaviour
     {
         completedInstallText.SetActive(false);
     }
+
     // Update is called once per frame
+    // verify objects in drop zone and transition to a new sccene 
     void Update()
     {
        if(hdmi.GetOldestInteractableSelected() != null && power.GetOldestInteractableSelected() != null)
@@ -28,11 +30,13 @@ public class VerifyMonitorInstall1 : MonoBehaviour
         }
     }
 
+    //transition to a new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into a new scene
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

@@ -14,15 +14,17 @@ public class GPUVerifyInstall : MonoBehaviour
     public int SceneToTransition;
 
 
+    //disable text objects 
     private void Start()
     {
         completedInstallText.SetActive(false);
     }
+
+    //verify & update text objects and transition to new scene
     private void Update()
     {
         if (completedText1.activeSelf && completedText2.activeSelf)
         {
-            print("Install complete");
             completedText1.SetActive(false);
             completedText2.SetActive(false);
             completedInstallText.SetActive(true);
@@ -30,11 +32,13 @@ public class GPUVerifyInstall : MonoBehaviour
         }
     }
 
+    //transition to new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into new scene
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

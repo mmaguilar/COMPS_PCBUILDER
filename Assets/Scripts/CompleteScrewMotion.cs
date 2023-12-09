@@ -21,12 +21,15 @@ public class CompleteScrewMotion : MonoBehaviour
     public GameObject currentStopText;
     public GameObject completedText;
 
+    //hide text objects when scene begins 
     private void Start()
     {
         currentStopText.gameObject.SetActive(false);
         completedText.gameObject.SetActive(false);
     }
 
+    //display text objects when entering collision 
+    //transition to the next scene on collision
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")
@@ -38,6 +41,8 @@ public class CompleteScrewMotion : MonoBehaviour
 
     }
 
+    //display text objects on collision stay 
+    //being screwdriver behavior on collision
     public void OnTriggerStay(Collider other)
     {
         previousStopText.gameObject.SetActive(false);
@@ -50,17 +55,21 @@ public class CompleteScrewMotion : MonoBehaviour
         }
     }
 
+    //screwdriver behavior and animation
     IEnumerator screwdriverMotion()
     {
         screwdriverObject.transform.Rotate(0, rotateSpeed, 0);
         boltObject.transform.Translate(0, moveSpeed, 0);
         yield return new WaitForSeconds(0.01f);
     }
+
+    //transition to new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into new scene 
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

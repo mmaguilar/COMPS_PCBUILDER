@@ -15,11 +15,13 @@ public class RestartScript : MonoBehaviour
         GoToScene(SceneToTransition);
     }
 
+    //transition into a new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into new scene
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

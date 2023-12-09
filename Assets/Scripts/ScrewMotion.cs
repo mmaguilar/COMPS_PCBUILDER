@@ -22,16 +22,15 @@ public class ScrewMotion : MonoBehaviour
     public GameObject currentInstructionsText;
     public GameObject currentPointer;
 
-   // public GameObject completedText;
-
+    //set enable/disable objects when scene begins
     private void Start()
     {
         currentStopText.gameObject.SetActive(false);
         currentInstructionsText.gameObject.SetActive(false);
         currentPointer.gameObject.SetActive(false);
-        //completedText.gameObject.SetActive(false);
     }
 
+    //update objects on collision enter 
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")
@@ -43,6 +42,7 @@ public class ScrewMotion : MonoBehaviour
        
     }
 
+    //update objects and begin screwdriver behavior on collision stay 
     public void OnTriggerStay(Collider other)
     {
         previousStopText.gameObject.SetActive(false);
@@ -55,6 +55,7 @@ public class ScrewMotion : MonoBehaviour
         }
     }
 
+    //screwdriver behavior and animation 
     IEnumerator screwdriverMotion()
     {
         screwdriverObject.transform.Rotate(0, rotateSpeed, 0);

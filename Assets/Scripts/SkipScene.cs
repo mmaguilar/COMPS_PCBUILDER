@@ -12,12 +12,14 @@ public class SkipScene : MonoBehaviour
     {
         GoToScene(SceneToTransition);
     }
-
+    
+    //transition to new scene
     public void GoToScene(int scene)
     {
         StartCoroutine(GoToSceneRoutine(scene));
     }
 
+    //fade into new scene 
     IEnumerator GoToSceneRoutine(int scene)
     {
         fadeScreen.FadeOut();

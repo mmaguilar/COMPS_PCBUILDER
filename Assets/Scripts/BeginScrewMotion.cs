@@ -17,6 +17,7 @@ public class BeginScrewMotion : MonoBehaviour
     public GameObject currentInstructionsText;
     public GameObject currentPointer;
 
+    //hide text objects when scene begins 
     private void Start()
     {
         currentStopText.gameObject.SetActive(false);
@@ -24,7 +25,7 @@ public class BeginScrewMotion : MonoBehaviour
         currentPointer.gameObject.SetActive(false);
     }
 
-    //updates UI objects on collision
+    //display text objects on entering collision
     public void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Checkpoint")
@@ -36,6 +37,8 @@ public class BeginScrewMotion : MonoBehaviour
 
     }
 
+    //display text objects on staying collision
+    //Begin the screwdriver behavior on collision 
     public void OnTriggerStay(Collider other)
     {
         startingInstructions.gameObject.SetActive(false);
@@ -46,6 +49,7 @@ public class BeginScrewMotion : MonoBehaviour
         }
     }
 
+    //Screwdriver behavior and animation
     IEnumerator screwdriverMotion()
     {
         screwdriverObject.transform.Rotate(0, rotateSpeed, 0);

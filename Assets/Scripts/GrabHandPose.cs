@@ -4,10 +4,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.XR.Interaction.Toolkit;
 
-/*#if UNITY_EDITOR
-using UnityEditor;
-#endif*/
-
 public class GrabHandPose : MonoBehaviour
 {
     public float poseTransitionDuration = 0;
@@ -35,6 +31,7 @@ public class GrabHandPose : MonoBehaviour
         leftHandPose.gameObject.SetActive(false);
     }
 
+    //set up hand pose using controller data values 
     public void SetUpPose(BaseInteractionEventArgs arg)
     {
         if(arg.interactorObject is XRDirectInteractor) {
@@ -54,6 +51,7 @@ public class GrabHandPose : MonoBehaviour
         }
     }
 
+    //reset default hand pose 
     public void unSetPose(BaseInteractionEventArgs arg)
     {
         if (arg.interactorObject is XRDirectInteractor)
@@ -98,6 +96,7 @@ public class GrabHandPose : MonoBehaviour
         }
     }
 
+    //use hand data values and set hand pose 
     public IEnumerator SetHandDataRoutine(HandDataComponent h,Vector3 newPosition, Quaternion newRotation, Quaternion[] newBonesRotation, Vector3 startingPosition, Quaternion startingRotation, Quaternion[] startingBonesRotation)
     {
         float timer = 0;

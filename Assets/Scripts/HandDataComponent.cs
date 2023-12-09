@@ -11,5 +11,4 @@ public class HandDataComponent : MonoBehaviour
     public Animator animator;
     public Transform[] fingerBones;
 
-
 }
